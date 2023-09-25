@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 
 app = Flask(__name__)
 
@@ -9,6 +9,7 @@ def predict_response(message, prompt):
 
 @app.route('/your_endpoint', methods=['POST'])
 def process_request():
+    print('got post')
     try:
         data = request.get_json()
         message = data.get('message', '')
@@ -19,13 +20,18 @@ def process_request():
 
         # Return the response as JSON
         return jsonify({'response': response})
+        
     except Exception as e:
         return jsonify({'error': str(e)}), 500
 
 @app.route('/', methods=['GET'])
 def index():
     # Serve the index.html file from a directory named 'static'
-    return send_from_directory('static', 'index.html')
-    
+    # return send_from_directory('static', 'index.html')
+    # with open('static/index.html') as file:
+    #        return(read(file))
+    print('serving default')
+    return render_template('index.html')                                    
+
 if __name__ == '__main__':
-    app.run(host='localhost', port=your_port)
+    app.run(host='localhost', port=8000)
