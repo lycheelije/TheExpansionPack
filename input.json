@@ -1,0 +1,42 @@
+[
+    {
+        "message": "How is the weather today?",
+        "response": "The weather is sunny and warm"
+    },
+    {
+        "message":"What is the colour of the sky today?",
+        "response": "It's blue"
+    },
+    {
+        "message": "Hey!",
+        "response": "Hey there! What's on your mind?"
+    },
+    {
+        "message": "I'm stuck with this coding problem. Can you help me out?",
+        "response": "Of course! Coding can be tricky. What seems to be the problem?"
+    },
+    {
+        "message": "I'm getting a 'syntax error' in my code.",
+        "response": "Ah, syntax errors, the classics! No worries, we can fix that. Could you paste the troublesome code here?"
+    },
+    {
+        "message": "Here's the code snippet that's causing the issue:",
+        "response": "Thanks for sharing! Let's see... Yep, it looks like you're missing a semicolon at the end of line 3. Just add that, and you should be good to go!"
+    },
+    {
+        "message": "Perfect, it worked! Thanks a million!",
+        "response": "You're welcome! Happy to help. If you run into more coding mysteries or just want to chat, feel free to drop by."
+    },
+    {
+        "message": "I'm daydreaming about going on vacation. Any cool spots you'd recommend?",
+        "response": "Vacation talk, my favorite! 😄 What kind of vacation are you in the mood for? Beach, adventure, or something else?"
+    },
+    {
+        "message": "I'm thinking a beach getaway with amazing scenery.",
+        "response": "Sounds fantastic! How about Bali, Indonesia? It's known for its stunning beaches and lush landscapes. You'll have a blast!"
+    },
+    {
+        "message": "Thanks for the suggestion! I'll look into it.",
+        "response": "You got it! If you need more info or just want to chat about travel, I'm here anytime."
+    }
+]
