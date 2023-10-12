@@ -1,0 +1,34 @@
+<!-- Training Page -->
+{% extends "base.html" %}
+{% block title %}Training Page{% endblock %}
+{% block content %}
+<body>
+        <h1 class="text-center text-uppercase fw-bold">Training</h1    <div class="container"></div>
+    
+    <div class="container" name="UploadFiles">
+            <form class="d-flex flex-wrap justify-content-between"></form>
+      <div class="mb-3 flex-fill me-2">
+        <label for="fileInput" class="form-label">Upload File</label>
+        <input type="file" class="form-control" id="fileInput">
+      </div>
+      <div class="mb-3 flex-fill ms-2">
+        <label for="dataOrigin" class="form-label">Data Origin</label>
+        <select class="form-select" id="dataOrigin">
+          <option selected>Choose...</option>
+          <option selected value="discord">Discord</option>
+          <option value="teams">Microsoft Teams</option>
+          <option value="messenger">Facebook Messenger</option>
+        </select>
+      </div>
+      <div class="w-100 d-flex justify-content-center mt-3">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="container" name="Sort Messages">
+
+  </div>
+
+</body>
+{% endblock %}

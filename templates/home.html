@@ -1,0 +1,12 @@
+<!-- Index - Authentication Page -->
+{% extends "base.html" %}
+{% block title %}The Expansion Pack - Authentication{% endblock %}
+{% block content %}
+<body>
+    <div class="text-center">
+        <h2>Authentication</h2>
+        <a href="{{ url_for('login') }}">Login</a><br>
+        <a href="{{ url_for('register') }}">Register</a><br>
+    </div>
+</body>
+{% endblock %}
